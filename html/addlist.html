@@ -1,76 +1,75 @@
-<!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Create list</title>
-<link rel="stylesheet" type="text/css"   href="../css/styles.css"/>
- <link rel="stylesheet" type="text/css" href="../css/main.css">
-
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <link rel="stylesheet" href="../css/stylemenu.css">
+    <script type="text/javascript" src="../java/menu.js"></script>
 </head>
-
 <body>
-	<div class="nav">
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
-        <div class="menu">
-            <a href="addlist.html"><span>Home</span></a>
-            <a href="#">Notifications</a>
-            <a href="profiles.html">Profile</a>
-            <a href="index.html">Logout</a>
-            <a href="#">Help</a>
-        </div>
-    </div>
+        <nav class="navbar">
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+            
+                <ul class="navbar-nav">
+                  <li><a href="addlist.html">Home</a></li>
+                  <li><a href="profile.html">Profile</a></li>
+                  <li><a href="index.html">Logout</a></li>
+                  <li><a href="#">About</a></li>
+                </ul>
+              </nav>
+            
+              <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="addlist.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="index.html">Logout</a>
+                <a href="#">About</a>
+              </div>
 
-		<section id="body" class="width">
-			<aside id="sidebar" class="column-left">
 
-			<header>
-				<h1><a href="#">ToDo List App</a></h1>
 
-				<h2>Welcome to my App!</h2>
-				
-			</header>
+<div class="header">
+  <h1>Todo list App</h1>
+</div>
 
-			<nav id="mainnav">
-  				<ul>
-                            		<li class="selected-item"><a href="addlist.html">Add List</a></li>
-                           		 <li ><a href="add items.html">Add items</a></li>
-                           		 <li><a href="#">Lists</a></li>
-                            		<li><a href="#"> Finished tasks</a></li>
-                            	
-                        	</ul>
-			</nav>
+<div class="row">
 
-			
-			
-			</aside>
-			<section id="content" class="column-right">
-                		
-	    <article>
-			
-				<h3>Create Your list</h3>
-				
-				<fieldset>
+<div class="col-3 menu">
+  <ul>
+    <li class="selected_item"><a href="addlist.html">Add list</a></li>
+    <li><a href="additemss.html">Add Items Lists</a></li>
+    <li><a href="lists.html">Lists</a></li>
+    <li><a href="profile.html">profile</a></li>
+  </ul>
+</div>
 
-					
-					<form action="#" method="get">
-						
-						<input type="text" name="list" id="name" value="" /><br /></p>		
-						
-						<p><input type="submit" name="create" class="formbutton" value="create" /></p>
-					</form>
-					<br><br><br><br><br><br><br><br><br><br><br><br>
-	
-				</fieldset>
-		</article>
+<div class="col-6">
+  <h1>Create List</h1>
+  <p>
+      <form enctype="multipart/form-data">
+    <input type="text" placeholder ="create list">
+    <input type="button" value="create">
 
-		</section>
+</form></p>
+</div>
 
-		<div class="clear"></div>
 
-	</section>
-	
+</div>
+<div class="footer">
+    <p>My To-do App is a to-do list application that provides users with the ability to create different to-do lists. A single to-do list can have many to-do items..</p>
+  </div>
+
 
 </body>
 </html>
+
